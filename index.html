@@ -1,0 +1,1881 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我爱搞g52百度_影视种子资源检索 | 聚合搜索平台</title>
+    <meta name="description" content="我爱搞g52百度聚合全网优质磁力链接与种子资源，覆盖高清影视、热门剧集、经典动漫、稀缺软件等海量内容。平台采用智能解析引擎，支持多协议快速解析，搜索精准高效，资源实时更新。立即开启高效资源搜索之旅，畅享极速下载体验！">
+    <meta name="keywords" content="我爱搞g52百度,磁力链接,BT种子搜索,高清影视,资源聚合,种子下载工具">
+    <meta name="robots" content="index,follow">
+    <meta name="bingbot" content="index,follow">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="https://io.1130.hk/888.js"></script>
+    <style>
+        /* ===== CSS 全局变量 ===== */
+        :root {
+            --primary: #0d1b2a;
+            --primary-light: #1b2838;
+            --accent: #e63946;
+            --accent-hover: #c1121f;
+            --secondary: #457b9d;
+            --accent-glow: rgba(230, 57, 70, .25);
+            --bg: #f0f4f8;
+            --bg-gradient: linear-gradient(135deg, #e8eef5 0%, #f5f7fa 50%, #e0e8f0 100%);
+            --card-bg: rgba(255, 255, 255, 0.78);
+            --card-border: rgba(0, 0, 0, 0.06);
+            --text: #1d3557;
+            --text-light: #5a6b7d;
+            --text-muted: #8a9199;
+            --radius-lg: 24px;
+            --radius-pill: 70px;
+            --radius-sm: 14px;
+            --shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+            --shadow-hover: 0 16px 48px rgba(0, 0, 0, 0.14);
+            --transition: all 0.3s ease;
+            --font-size-base: 17px;
+            --line-height-base: 1.85;
+            --nav-height: 68px;
+            --container-safe: 1200px;
+        }
+        /* ===== 重置与基础 ===== */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            font-size: var(--font-size-base);
+            line-height: var(--line-height-base);
+            color: var(--text);
+            background: var(--bg-gradient);
+            background-attachment: fixed;
+            overflow-x: hidden;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        ul {
+            list-style: none;
+        }
+        img {
+            max-width: 100%;
+            display: block;
+        }
+        .container {
+            max-width: var(--container-safe);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        /* ===== 粒子背景 ===== */
+        #particle-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+            opacity: 0.35;
+        }
+        /* ===== 导航栏 ===== */
+        .site-nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: var(--nav-height);
+            background: rgba(13, 27, 42, 0.85);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            box-shadow: 0 2px 24px rgba(0, 0, 0, 0.15);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+        }
+        .nav-inner {
+            max-width: var(--container-safe);
+            margin: 0 auto;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 24px;
+        }
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            height: 42px;
+        }
+        .nav-logo .logo-icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--accent), var(--secondary));
+            flex-shrink: 0;
+        }
+        .nav-logo .logo-icon svg {
+            width: 24px;
+            height: 24px;
+            fill: #fff;
+        }
+        .nav-logo .logo-text {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            white-space: nowrap;
+        }
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+        .nav-menu a {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 15px;
+            font-weight: 500;
+            transition: color 0.3s;
+            position: relative;
+            padding: 4px 0;
+        }
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width 0.3s;
+        }
+        .nav-menu a:hover {
+            color: #fff;
+        }
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+        .nav-menu .nav-btn {
+            background: var(--accent);
+            padding: 8px 24px;
+            border-radius: 24px;
+            color: #fff;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        .nav-menu .nav-btn:hover {
+            background: var(--accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px var(--accent-glow);
+        }
+        /* ===== Banner ===== */
+        .banner {
+            position: relative;
+            min-height: 600px;
+            height: 65vh;
+            background: linear-gradient(135deg, #0d1b2a 0%, #1b2838 50%, #1e3a5f 100%);
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            padding-top: var(--nav-height);
+        }
+        .banner::before {
+            content: '';
+            position: absolute;
+            top: 10%;
+            left: 5%;
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            background: rgba(230, 57, 70, 0.2);
+            filter: blur(80px);
+            animation: float-glow 8s ease-in-out infinite;
+        }
+        .banner::after {
+            content: '';
+            position: absolute;
+            bottom: -50px;
+            right: 10%;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: rgba(69, 123, 157, 0.25);
+            filter: blur(90px);
+            animation: float-glow 10s ease-in-out infinite reverse;
+        }
+        @keyframes float-glow {
+            0%,
+            100% {
+                transform: scale(1) translateY(0);
+            }
+            50% {
+                transform: scale(1.08) translateY(-20px);
+            }
+        }
+        .banner-inner {
+            position: relative;
+            z-index: 2;
+            max-width: var(--container-safe);
+            margin: 0 auto;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 48px;
+            padding: 40px 24px;
+        }
+        .banner-left {
+            flex: 1;
+            max-width: 560px;
+        }
+        .banner-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255, 255, 255, 0.95);
+            color: var(--primary);
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 600;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+            margin-bottom: 24px;
+        }
+        .banner-tag svg {
+            width: 16px;
+            height: 16px;
+            fill: var(--accent);
+        }
+        .banner h1 {
+            font-size: 48px;
+            font-weight: 800;
+            color: #fff;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            letter-spacing: 2px;
+        }
+        .banner h1 .gradient-text {
+            background: linear-gradient(135deg, var(--accent), #f4a261);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .banner-desc {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 24px;
+            max-width: 460px;
+        }
+        .banner-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 32px;
+        }
+        .banner-tags span {
+            background: rgba(255, 255, 255, 0.12);
+            color: rgba(255, 255, 255, 0.9);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(4px);
+        }
+        .banner-btns {
+            display: flex;
+            gap: 16px;
+        }
+        .btn-primary {
+            background: var(--accent);
+            color: #fff;
+            padding: 14px 36px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: 0 4px 20px var(--accent-glow);
+        }
+        .btn-primary:hover {
+            background: var(--accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px var(--accent-glow);
+        }
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            padding: 14px 32px;
+            border-radius: 30px;
+            font-weight: 500;
+            font-size: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            cursor: pointer;
+            transition: var(--transition);
+            backdrop-filter: blur(4px);
+        }
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+        /* Banner 右栏电脑窗口 */
+        .banner-right {
+            flex: 1;
+            max-width: 560px;
+            display: flex;
+            justify-content: center;
+        }
+        .window-mock {
+            width: 100%;
+            max-width: 520px;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            border: 3px solid #1a1a2e;
+            overflow: hidden;
+            animation: float-window 6s ease-in-out infinite;
+        }
+        @keyframes float-window {
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-12px);
+            }
+        }
+        .window-topbar {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: #1a1a2e;
+            padding: 14px 20px;
+        }
+        .window-topbar .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        .window-topbar .dot-red {
+            background: #ff5f57;
+        }
+        .window-topbar .dot-yellow {
+            background: #febc2e;
+        }
+        .window-topbar .dot-green {
+            background: #28c840;
+        }
+        .window-topbar .address-bar {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 4px 12px;
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-left: 8px;
+        }
+        .window-body {
+            display: flex;
+            padding: 20px;
+            gap: 16px;
+            background: #f8f9fc;
+            min-height: 220px;
+        }
+        .window-left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 90px;
+            flex-shrink: 0;
+            border-radius: 16px;
+            background: linear-gradient(135deg, #e8f0fe, #f0f4f8);
+        }
+        .window-left .app-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--accent), var(--secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        .window-left .app-icon svg {
+            width: 26px;
+            height: 26px;
+            fill: #fff;
+        }
+        .window-left .app-name {
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        .window-left .app-status {
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+        .window-center {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .window-center svg {
+            width: 140px;
+            height: 140px;
+        }
+        .window-right {
+            width: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            background: #fff;
+            border-radius: 16px;
+            padding: 16px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+        }
+        .window-right .data-item {
+            text-align: center;
+        }
+        .window-right .data-val {
+            font-size: 18px;
+            font-weight: 800;
+            color: var(--primary);
+        }
+        .window-right .data-label {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        /* ===== 核心优势 ===== */
+        .section-advantage {
+            padding: 100px 24px;
+            background: transparent;
+            position: relative;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 56px;
+        }
+        .section-header h2 {
+            font-size: 38px;
+            font-weight: 800;
+            color: var(--text);
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+        }
+        .section-header p {
+            color: var(--text-light);
+            font-size: 16px;
+        }
+        .adv-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+        .adv-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border-radius: var(--radius-pill);
+            padding: 40px 32px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--card-border);
+            transition: var(--transition);
+            min-height: 260px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .adv-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+            border-color: rgba(230, 57, 70, 0.3);
+        }
+        .adv-icon {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, var(--accent), var(--secondary));
+            box-shadow: 0 8px 24px rgba(230, 57, 70, 0.25);
+        }
+        .adv-icon svg {
+            width: 34px;
+            height: 34px;
+            fill: #fff;
+        }
+        .adv-card h3 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 10px;
+        }
+        .adv-card p {
+            color: var(--text-light);
+            font-size: 15px;
+            line-height: 1.7;
+            max-width: 240px;
+        }
+        /* ===== 精选视频 ===== */
+        .section-video {
+            padding: 90px 24px;
+            background: #fff;
+        }
+        .section-video .section-header h2 {
+            color: var(--text);
+        }
+        .highlight-text {
+            color: var(--accent);
+            position: relative;
+        }
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+            margin-top: 48px;
+        }
+        .video-card {
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            border: 1px solid var(--card-border);
+            transition: var(--transition);
+        }
+        .video-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-hover);
+            border-color: rgba(230, 57, 70, 0.25);
+        }
+        .video-thumbnail {
+            position: relative;
+            height: 180px;
+            background-size: cover;
+            background-position: center;
+        }
+        .video-thumbnail .cat-label {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: rgba(0, 0, 0, 0.55);
+            color: #fff;
+            font-size: 12px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            backdrop-filter: blur(4px);
+        }
+        .video-thumbnail .cat-label svg {
+            width: 12px;
+            height: 12px;
+            fill: #fff;
+        }
+        .play-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 48px;
+            height: 48px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+            transition: var(--transition);
+        }
+        .play-btn:hover {
+            background: var(--accent);
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+        .play-btn svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--primary);
+            margin-left: 3px;
+        }
+        .video-duration {
+            position: absolute;
+            bottom: 12px;
+            right: 12px;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            font-size: 12px;
+            padding: 2px 10px;
+            border-radius: 12px;
+        }
+        .video-info {
+            padding: 20px;
+        }
+        .video-title {
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 8px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .video-desc {
+            color: var(--text-light);
+            font-size: 14px;
+            line-height: 1.6;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            margin-bottom: 12px;
+        }
+        .video-meta {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 12px;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+        .video-meta span {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .video-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .tag {
+            background: #f0f2f5;
+            color: var(--text-light);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+        }
+        .tag-video {
+            background: var(--accent);
+            color: #fff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+        }
+        /* ===== 相关资讯 ===== */
+        .section-news {
+            padding: 90px 24px;
+            background: var(--bg-gradient);
+        }
+        .section-news .section-header .divider {
+            display: block;
+            width: 48px;
+            height: 4px;
+            background: var(--accent);
+            margin: 20px auto 0;
+            border-radius: 4px;
+        }
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+            margin-top: 48px;
+            grid-auto-rows: 1fr;
+        }
+        .news-card {
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: var(--radius-lg);
+            padding: 28px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--card-border);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            min-height: 300px;
+        }
+        .news-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-hover);
+            border-color: rgba(230, 57, 70, 0.2);
+        }
+        .news-date {
+            color: var(--accent);
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .news-date svg {
+            width: 14px;
+            height: 14px;
+            fill: var(--accent);
+        }
+        .news-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 12px;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            min-height: 56px;
+        }
+        .news-excerpt {
+            color: var(--text-light);
+            font-size: 14px;
+            line-height: 1.65;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            flex: 1;
+            margin-bottom: 16px;
+        }
+        .news-link {
+            color: var(--text-muted);
+            font-size: 14px;
+            font-weight: 500;
+            transition: var(--transition);
+            margin-top: auto;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .news-link:hover {
+            color: var(--accent);
+            gap: 8px;
+        }
+        /* ===== FAQ ===== */
+        .section-faq {
+            padding: 90px 24px;
+            background: #fff;
+        }
+        .faq-list {
+            max-width: 860px;
+            margin: 48px auto 0;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .faq-item {
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow);
+            border: 1px solid var(--card-border);
+            overflow: hidden;
+            transition: var(--transition);
+        }
+        .faq-item:hover {
+            box-shadow: var(--shadow-hover);
+            transform: translateY(-2px);
+        }
+        .faq-question {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 22px 28px;
+            cursor: pointer;
+            user-select: none;
+        }
+        .faq-question svg {
+            width: 22px;
+            height: 22px;
+            fill: var(--accent);
+            flex-shrink: 0;
+        }
+        .faq-question h3 {
+            flex: 1;
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--accent);
+            line-height: 1.4;
+        }
+        .faq-question .faq-toggle {
+            transition: transform 0.3s;
+            color: var(--text-muted);
+            font-size: 20px;
+            line-height: 1;
+        }
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg);
+            color: var(--accent);
+        }
+        .faq-answer {
+            display: none;
+            padding: 0 28px 24px 66px;
+            color: var(--text-light);
+            font-size: 15px;
+            line-height: 1.75;
+        }
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+        .faq-answer ul {
+            margin: 8px 0 0;
+            padding-left: 0;
+        }
+        .faq-answer li {
+            margin-bottom: 8px;
+            padding-left: 16px;
+            position: relative;
+        }
+        .faq-answer li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+        /* ===== 评论模块 ===== */
+        .section-comment {
+            padding: 90px 24px;
+            background: var(--bg-gradient);
+        }
+        .comment-wrapper {
+            max-width: var(--container-safe);
+            margin: 48px auto 0;
+            display: flex;
+            gap: 40px;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow);
+            padding: 36px;
+            border: 1px solid var(--card-border);
+        }
+        .comment-form-side {
+            flex: 0 0 340px;
+        }
+        .comment-form-card {
+            background: #fff;
+            border-radius: var(--radius-lg);
+            padding: 28px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+        }
+        .comment-form-card input,
+        .comment-form-card textarea {
+            width: 100%;
+            border: 1px solid #e8ecf1;
+            border-radius: 12px;
+            padding: 12px 16px;
+            font-size: 15px;
+            font-family: inherit;
+            outline: none;
+            transition: var(--transition);
+            margin-bottom: 14px;
+            background: #f8f9fc;
+            color: var(--text);
+        }
+        .comment-form-card input:focus,
+        .comment-form-card textarea:focus {
+            border-color: var(--secondary);
+            box-shadow: 0 0 0 3px rgba(69, 123, 157, 0.15);
+        }
+        .comment-form-card textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+        .comment-form-card .btn-submit {
+            background: var(--accent);
+            color: #fff;
+            border: none;
+            border-radius: 24px;
+            padding: 10px 24px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .comment-form-card .btn-submit:hover {
+            background: var(--accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px var(--accent-glow);
+        }
+        .comment-list-side {
+            flex: 1;
+        }
+        .comment-list-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .comment-list-header h3 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text);
+        }
+        .comment-list-header .comment-count {
+            background: var(--accent);
+            color: #fff;
+            font-size: 13px;
+            padding: 4px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+        .comment-scroll {
+            max-height: 600px;
+            overflow-y: auto;
+            padding-right: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .comment-scroll::-webkit-scrollbar {
+            width: 6px;
+        }
+        .comment-scroll::-webkit-scrollbar-thumb {
+            background: #d0d5dd;
+            border-radius: 6px;
+        }
+        .comment-item {
+            background: #fff;
+            border-radius: var(--radius-lg);
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+            transition: var(--transition);
+        }
+        .comment-item:hover {
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+        }
+        .comment-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 10px;
+        }
+        .comment-avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--secondary), var(--accent));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: 700;
+            font-size: 15px;
+            flex-shrink: 0;
+        }
+        .comment-nick {
+            font-weight: 600;
+            font-size: 15px;
+            color: var(--text);
+        }
+        .comment-time {
+            margin-left: auto;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+        .comment-tag-row {
+            margin-bottom: 8px;
+        }
+        .comment-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            background: #f0f2f5;
+            color: var(--text-light);
+            font-size: 12px;
+            padding: 2px 10px;
+            border-radius: 20px;
+        }
+        .comment-tag svg {
+            width: 12px;
+            height: 12px;
+            fill: var(--text-light);
+        }
+        .comment-text {
+            font-size: 15px;
+            line-height: 1.7;
+            color: var(--text);
+            margin-bottom: 12px;
+        }
+        .comment-actions {
+            display: flex;
+            gap: 20px;
+        }
+        .comment-actions .action-btn {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 13px;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: var(--transition);
+            background: none;
+            border: none;
+        }
+        .comment-actions .action-btn:hover {
+            color: var(--accent);
+        }
+        .comment-more {
+            text-align: center;
+            padding: 20px 0 0;
+            color: var(--text-muted);
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        .comment-more svg {
+            width: 16px;
+            height: 16px;
+            animation: bounce-down 1.5s infinite;
+        }
+        @keyframes bounce-down {
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(4px);
+            }
+        }
+        /* ===== 页脚 ===== */
+        .site-footer {
+            background: var(--primary);
+            color: rgba(255, 255, 255, 0.6);
+            padding: 48px 24px 32px;
+            font-size: 14px;
+            text-align: center;
+            border-top: 3px solid rgba(230, 57, 70, 0.4);
+        }
+        .site-footer .footer-inner {
+            max-width: var(--container-safe);
+            margin: 0 auto;
+        }
+        .site-footer .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+        }
+        .site-footer .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            transition: var(--transition);
+        }
+        .site-footer .footer-links a:hover {
+            color: #fff;
+        }
+        .site-footer .footer-copy {
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 20px;
+            color: rgba(255, 255, 255, 0.4);
+        }
+        /* ===== 响应式 ===== */
+        @media (max-width: 992px) {
+            .banner-inner {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding-top: 40px;
+            }
+            .banner-left {
+                max-width: 100%;
+            }
+            .banner-btns {
+                justify-content: center;
+            }
+            .banner-tags {
+                justify-content: center;
+            }
+            .banner-right {
+                max-width: 100%;
+            }
+            .window-mock {
+                max-width: 480px;
+            }
+            .adv-grid,
+            .video-grid,
+            .news-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .comment-wrapper {
+                flex-direction: column;
+            }
+            .comment-form-side {
+                flex: unset;
+                width: 100%;
+            }
+        }
+        @media (max-width: 640px) {
+            .nav-menu {
+                display: none;
+            }
+            .nav-logo .logo-text {
+                font-size: 18px;
+            }
+            .banner h1 {
+                font-size: 32px;
+            }
+            .adv-grid,
+            .video-grid,
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+            .section-header h2 {
+                font-size: 28px;
+            }
+            .adv-card {
+                padding: 30px 20px;
+            }
+            .comment-wrapper {
+                padding: 20px;
+            }
+            .window-body {
+                flex-direction: column;
+                align-items: center;
+            }
+            .window-right {
+                flex-direction: row;
+                width: 100%;
+                justify-content: space-around;
+            }
+        }
+        /* ===== 加载动画 ===== */
+        body {
+            animation: fadeIn 0.6s ease-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 粒子背景 Canvas -->
+    <canvas id="particle-bg"></canvas>
+    <!-- ===== 固定导航栏 ===== -->
+    <nav class="site-nav" role="navigation" aria-label="主导航">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo" aria-label="我爱搞g52百度首页">
+                <span class="logo-icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.4 1.2 4.5 3 5.7V17a4 4 0 0 0 8 0v-2.3c1.8-1.2 3-3.3 3-5.7a7 7 0 0 0-7-7z"/></svg>
+                </span>
+                <span class="logo-text">我爱搞g52百度</span>
+            </a>
+            <div class="nav-menu">
+                <a href="#section-advantage">核心优势</a>
+                <a href="#section-video">精选视频</a>
+                <a href="#section-news">相关资讯</a>
+                <a href="#section-faq">常见问题</a>
+                <a href="#section-comment">留言反馈</a>
+                <a href="#" class="nav-btn">立即搜索</a>
+            </div>
+        </div>
+    </nav>
+    <!-- ===== 首屏 Banner ===== -->
+    <header class="banner" role="banner">
+        <div class="banner-inner">
+            <!-- 左栏 -->
+            <div class="banner-left">
+                <div class="banner-tag">
+                    <svg viewBox="0 0 16 16"><path d="M8 0L6 6L0 8l6 2l2 6l2-6l6-2l-6-2z"/></svg>
+                    全网资源一站式聚合
+                </div>
+                <h1>磁力搜索<em class="gradient-text">大全</em></h1>
+                <p class="banner-desc">聚合全球海量磁力链接与BT种子资源，覆盖影视、动漫、软件、游戏等多领域，提供高效精准的搜索体验。</p>
+                <div class="banner-tags">
+                    <span>#磁力链接</span>
+                    <span>#BT种子</span>
+                    <span>#高清影视</span>
+                    <span>#资源聚合</span>
+                </div>
+                <div class="banner-btns">
+                    <button class="btn-primary" aria-label="开始搜索">🔍 立即搜索</button>
+                    <button class="btn-secondary" aria-label="了解更多">了解更多</button>
+                </div>
+            </div>
+            <!-- 右栏 -->
+            <div class="banner-right">
+                <div class="window-mock">
+                    <div class="window-topbar">
+                        <span class="dot dot-red"></span>
+                        <span class="dot dot-yellow"></span>
+                        <span class="dot dot-green"></span>
+                        <span class="address-bar">🔒 magnet.searchexample.com</span>
+                    </div>
+                    <div class="window-body">
+                        <div class="window-left">
+                            <div class="app-icon"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.4 1.2 4.5 3 5.7V17a4 4 0 0 0 8 0v-2.3c1.8-1.2 3-3.3 3-5.7a7 7 0 0 0-7-7z"/></svg></div>
+                            <div class="app-name">磁力引擎</div>
+                            <div class="app-status">运行中</div>
+                        </div>
+                        <div class="window-center">
+                            <svg viewBox="0 0 200 200">
+                                <circle cx="100" cy="100" r="70" fill="none" stroke="#e8ecf1" stroke-width="12"/>
+                                <circle cx="100" cy="100" r="70" fill="none" stroke="#e63946" stroke-width="12" stroke-dasharray="340 100" stroke-linecap="round"/>
+                                <text x="100" y="105" text-anchor="middle" font-size="40" font-weight="800" fill="#1d3557">88%</text>
+                            </svg>
+                        </div>
+                        <div class="window-right">
+                            <div class="data-item"><div class="data-val">1.2亿</div><div class="data-label">磁力资源</div></div>
+                            <div class="data-item"><div class="data-val">150万</div><div class="data-label">日活用户</div></div>
+                            <div class="data-item"><div class="data-val">99.9%</div><div class="data-label">链接可用率</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ===== 核心优势模块 ===== -->
+    <section id="section-advantage" class="section-advantage">
+        <div class="container">
+            <div class="section-header">
+                <h2>为什么选择「我爱搞g52百度」？</h2>
+                <p>六大核心优势，让资源搜索更高效、更安全、更便捷</p>
+            </div>
+            <div class="adv-grid">
+                <article class="adv-card">
+                    <div class="adv-icon"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.4 1.2 4.5 3 5.7V17a4 4 0 0 0 8 0v-2.3c1.8-1.2 3-3.3 3-5.7a7 7 0 0 0-7-7z"/></svg></div>
+                    <h3>全域实时索引</h3>
+                    <p>覆盖全球超过120个资源站点，全天候自动抓取更新索引，确保搜索结果的时效性与全面性。</p>
+                </article>
+                <article class="adv-card">
+                    <div class="adv-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 16c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/></svg></div>
+                    <h3>多协议解析</h3>
+                    <p>支持磁力链接、BT种子、HTTP下载等多协议，智能匹配最优解析通道，大大提升下载成功率。</p>
+                </article>
+                <article class="adv-card">
+                    <div class="adv-icon"><svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-9H9V6c0-1.66 1.34-3 3-3s3 1.34 3 3v2z"/></svg></div>
+                    <h3>安全隐私护航</h3>
+                    <p>无追踪、无广告弹窗，匿名搜索保护用户隐私。所有资源均经过安全扫描，降低风险。</p>
+                </article>
+                <article class="adv-card">
+                    <div class="adv-icon"><svg viewBox="0 0 24 24"><path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"/></svg></div>
+                    <h3>极速搜索体验</h3>
+                    <p>分布式搜索引擎架构，毫秒级响应。即使在高并发时段，依然保持稳定流畅的搜索体验。</p>
+                </article>
+                <article class="adv-card">
+                    <div class="adv-icon"><svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg></div>
+                    <h3>资源类型齐全</h3>
+                    <p>影视、动漫、软件、游戏、电子书、音乐等全品类覆盖。无论是热门新剧还是冷门老片，都能找到。</p>
+                </article>
+                <article class="adv-card">
+                    <div class="adv-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg></div>
+                    <h3>智能过滤推荐</h3>
+                    <p>基于用户行为分析，智能过滤无效资源，推荐高匹配度结果，减少筛选成本。</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- ===== 精选视频模块 ===== -->
+    <section id="section-video" class="section-video">
+        <div class="container">
+            <div class="section-header">
+                <h2><span class="highlight-text">热门精选</span> 视频资源</h2>
+                <p>每日更新，编辑精选的高清影视剧集与纪录片</p>
+            </div>
+            <div class="video-grid">
+                <article class="video-card">
+                    <div class="video-thumbnail" style="background-image: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);">
+                        <span class="cat-label"><svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3L2 12h3v8z"/></svg> 影视</span>
+                        <div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        <span class="video-duration">02:35:00</span>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">2026年必看科幻大片TOP10</h3>
+                        <p class="video-desc">盘点年度最值得期待的科幻电影，从史诗级太空歌剧到硬核人工智能题材，部部精彩。</p>
+                        <div class="video-meta">
+                            <span>👁 125.8万</span>
+                            <span>👍 3.2万</span>
+                        </div>
+                        <div class="video-tags">
+                            <span class="tag-video">热门</span>
+                            <span class="tag">科幻</span>
+                            <span class="tag">片单</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="video-card">
+                    <div class="video-thumbnail" style="background-image: linear-gradient(135deg, #0f3443 0%, #34e89e 100%);">
+                        <span class="cat-label"><svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3L2 12h3v8z"/></svg> 经典</span>
+                        <div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        <span class="video-duration">01:45:30</span>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">经典武侠片4K修复版合集</h3>
+                        <p class="video-desc">邵氏经典、徐克江湖、胡金铨的意境，一代人的武侠记忆重返大银幕，画质焕新。</p>
+                        <div class="video-meta">
+                            <span>👁 86.3万</span>
+                            <span>👍 2.1万</span>
+                        </div>
+                        <div class="video-tags">
+                            <span class="tag-video">修复</span>
+                            <span class="tag">武侠</span>
+                            <span class="tag">经典</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="video-card">
+                    <div class="video-thumbnail" style="background-image: linear-gradient(135deg, #373b44 0%, #4286f4 100%);">
+                        <span class="cat-label"><svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3L2 12h3v8z"/></svg> 剧集</span>
+                        <div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        <span class="video-duration">00:52:18</span>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">悬疑剧《迷雾追踪》全季解说</h3>
+                        <p class="video-desc">一集一个反转，全员演技在线。深度剖析剧情细节与隐藏线索，看完直呼过瘾。</p>
+                        <div class="video-meta">
+                            <span>👁 210.4万</span>
+                            <span>👍 5.6万</span>
+                        </div>
+                        <div class="video-tags">
+                            <span class="tag-video">热播</span>
+                            <span class="tag">悬疑</span>
+                            <span class="tag">解谜</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="video-card">
+                    <div class="video-thumbnail" style="background-image: linear-gradient(135deg, #0b8793 0%, #360033 100%);">
+                        <span class="cat-label"><svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3L2 12h3v8z"/></svg> 纪录</span>
+                        <div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        <span class="video-duration">01:08:45</span>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">豆瓣9.5分自然纪录片精选</h3>
+                        <p class="video-desc">从深海到极地，从雨林到沙漠，地球最震撼的生命奇观，4K绝美画面帧帧壁纸。</p>
+                        <div class="video-meta">
+                            <span>👁 98.7万</span>
+                            <span>👍 4.3万</span>
+                        </div>
+                        <div class="video-tags">
+                            <span class="tag-video">高分</span>
+                            <span class="tag">自然</span>
+                            <span class="tag">4K</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="video-card">
+                    <div class="video-thumbnail" style="background-image: linear-gradient(135deg, #42275a 0%, #734b6d 100%);">
+                        <span class="cat-label"><svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3L2 12h3v8z"/></svg> 稀缺</span>
+                        <div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        <span class="video-duration">01:52:22</span>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">全网稀缺老电影资源盘点</h3>
+                        <p class="video-desc">那些绝版多年的经典老片，终于找到高清资源！本片收录上世纪绝版佳作合集。</p>
+                        <div class="video-meta">
+                            <span>👁 45.2万</span>
+                            <span>👍 1.8万</span>
+                        </div>
+                        <div class="video-tags">
+                            <span class="tag-video">独家</span>
+                            <span class="tag">老片</span>
+                            <span class="tag">怀旧</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="video-card">
+                    <div class="video-thumbnail" style="background-image: linear-gradient(135deg, #141e30 0%, #243b55 100%);">
+                        <span class="cat-label"><svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3L2 12h3v8z"/></svg> 收藏</span>
+                        <div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        <span class="video-duration">02:15:10</span>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">漫威系列蓝光原盘收藏指南</h3>
+                        <p class="video-desc">从《钢铁侠》到《复联6》蓝光原盘大科普，版本对比与画质深度分析，漫威迷必看！</p>
+                        <div class="video-meta">
+                            <span>👁 156.9万</span>
+                            <span>👍 4.8万</span>
+                        </div>
+                        <div class="video-tags">
+                            <span class="tag-video">漫威</span>
+                            <span class="tag">蓝光</span>
+                            <span class="tag">收藏</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- ===== 相关资讯模块 ===== -->
+    <section id="section-news" class="section-news">
+        <div class="container">
+            <div class="section-header">
+                <h2>相关资讯</h2>
+                <p>了解行业动态，掌握资源获取技巧</p>
+                <span class="divider"></span>
+            </div>
+            <div class="news-grid">
+                <article class="news-card">
+                    <p class="news-date"><svg viewBox="0 0 24 24"><path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 16H5V9h14v11z"/></svg>2026-02-18</p>
+                    <h3 class="news-title">春季档电影市场回暖 多部重磅大片定档</h3>
+                    <p class="news-excerpt">随着春节档的余温，春季档电影市场表现强劲，多部国内外大片宣布定档，引发观众强烈期待。</p>
+                    <a href="#" class="news-link">查看详情 →</a>
+                </article>
+                <article class="news-card">
+                    <p class="news-date"><svg viewBox="0 0 24 24"><path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 16H5V9h14v11z"/></svg>2026-02-14</p>
+                    <h3 class="news-title">磁力链接技术演进背后的版权博弈</h3>
+                    <p class="news-excerpt">磁力链接技术从诞生到普及已近20年，在版权方与技术社区之间的博弈始终未停。</p>
+                    <a href="#" class="news-link">查看详情 →</a>
+                </article>
+                <article class="news-card">
+                    <p class="news-date"><svg viewBox="0 0 24 24"><path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 16H5V9h14v11z"/></svg>2026-02-10</p>
+                    <h3 class="news-title">BT下载防坑指南：教你识别虚假资源</h3>
+                    <p class="news-excerpt">网络上充斥着大量虚假种子和钓鱼资源，掌握这几招轻松避开下载陷阱。</p>
+                    <a href="#" class="news-link">查看详情 →</a>
+                </article>
+                <article class="news-card">
+                    <p class="news-date"><svg viewBox="0 0 24 24"><path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 16H5V9h14v11z"/></svg>2026-02-05</p>
+                    <h3 class="news-title">高清影视画质进阶：从1080P到4K全解析</h3>
+                    <p class="news-excerpt">如何辨别真4K与伪4K？不同分辨率对带宽和存储的要求有多大差异？一文看懂。</p>
+                    <a href="#" class="news-link">查看详情 →</a>
+                </article>
+                <article class="news-card">
+                    <p class="news-date"><svg viewBox="0 0 24 24"><path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 16H5V9h14v11z"/></svg>2026-01-28</p>
+                    <h3 class="news-title">影视版权保护新规下的资源获取攻略</h3>
+                    <p class="news-excerpt">版权保护政策持续收紧，普通用户的下载行为边界在哪里？如何合规获取资源？</p>
+                    <a href="#" class="news-link">查看详情 →</a>
+                </article>
+                <article class="news-card">
+                    <p class="news-date"><svg viewBox="0 0 24 24"><path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 16H5V9h14v11z"/></svg>2026-01-22</p>
+                    <h3 class="news-title">NAS+磁力：教你搭建私人影视库</h3>
+                    <p class="news-excerpt">通过NAS设备配合磁力搜索工具，轻松搭建属于自己的专属影视资源库，随时随地播放。</p>
+                    <a href="#" class="news-link">查看详情 →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- ===== 常见问题 FAQ ===== -->
+    <section id="section-faq" class="section-faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>常见问题</h2>
+                <p>关于我爱搞g52百度，你想知道的都在这里</p>
+            </div>
+            <div class="faq-list" id="faqList">
+                <div class="faq-item active">
+                    <div class="faq-question" data-index="0">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/></svg>
+                        <h3>我爱搞g52百度会收录违规资源吗？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <ul>
+                            <li>平台严格遵守法律法规，建立了敏感资源自动过滤机制，定期清理违规内容。</li>
+                            <li>对涉及色情、赌博、暴力等不良信息实行零容忍，一经发现立即下架并封禁。</li>
+                            <li>支持用户举报功能，任何违规资源都可以一键反馈，专人24小时内处理。</li>
+                            <li>运营团队持续关注监管动态，不断优化内容安全策略，确保平台合规运行。</li>
+                            <li>平台仅提供搜索技术，不直接存储任何资源文件，服务器上不保存侵权内容。</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" data-index="1">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/></svg>
+                        <h3>磁力链接与BT种子有何区别？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <ul>
+                            <li>磁力链接是基于DHT网络的哈希标识，不需要种子文件即可定位资源，更轻量。</li>
+                            <li>BT种子文件包含文件元数据和Tracker信息，需要下载后通过BT客户端打开。</li>
+                            <li>磁力链接不依赖中央服务器，相比传统BT种子更不易失效，分布更广。</li>
+                            <li>两者最终都通过P2P协议传输数据，下载体验上差异不大，主要在于分享方式。</li>
+                            <li>磁力链接无需上传文件，复制粘贴即可分享，使用上比种子更方便快捷。</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" data-index="2">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/></svg>
+                        <h3>为什么有些磁力链接下载速度很慢？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <ul>
+                            <li>资源的热门程度是关键因素。冷门资源下载用户少，上传者少，速度自然慢。</li>
+                            <li>DHT网络节点连接情况会影响节点发现效率，从而影响获取资源的速度。</li>
+                            <li>下载器内部的线程数、缓存设置等参数配置也会影响实际下载表现。</li>
+                            <li>本地网络环境（NAT类型、防火墙、运营商限制）对P2P下载影响巨大。</li>
+                            <li>同一磁力链接在不同时间下载速度可能不同，因为资源热度会动态变化。</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" data-index="3">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/></svg>
+                        <h3>使用磁力搜索下载影视资源合法吗？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <ul>
+                            <li>搜索引擎本身是中立的工具，但下载和传播盗版资源可能侵犯著作权，需自行判断。</li>
+                            <li>用户应优先选择正版和授权渠道获取影视内容，支持创作者与行业健康发展。</li>
+                            <li>对于公有领域、开放许可或经授权的资源，使用磁力搜索下载是完全合法的。</li>
+                            <li>请勿将下载资源用于商业用途或大范围传播，个人合理使用是底线。</li>
+                            <li>各国家和地区对版权的规定略有差异，请遵守当地法律法规。</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" data-index="4">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/></svg>
+                        <h3>我爱搞g52百度的资源更新频率如何？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <ul>
+                            <li>核心索引库每10分钟自动同步一次，基本能覆盖全网最新的磁力资源。</li>
+                            <li>热门资源通过多节点监控，通常在上传后几分钟内即可被搜索到。</li>
+                            <li>对于失效资源和死链，系统会在24小时内自动标记和下架。</li>
+                            <li>用户可通过资源提交功能主动分享新链接，审核通过后立即进入索引。</li>
+                            <li>平台还会根据用户搜索热度动态优化爬虫抓取优先级，确保高需求资源优先入库。</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" data-index="5">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/></svg>
+                        <h3>如何安全地使用磁力搜索工具？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <ul>
+                            <li>建议使用官方推荐的正规下载客户端，避免使用来源不明的第三方修改版。</li>
+                            <li>为电脑安装可靠的杀毒软件和防火墙，并及时更新病毒库，防止捆绑木马。</li>
+                            <li>下载后先进行安全扫描再运行，特别是对于可执行文件和压缩包要格外警惕。</li>
+                            <li>避免下载和运行要求关闭杀毒软件的所谓"破解版"资源，这类风险极高。</li>
+                            <li>注意个人隐私保护，不要在公共网络环境下进行敏感资源搜索和下载。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== 评论留言模块 ===== -->
+    <section id="section-comment" class="section-comment">
+        <div class="container">
+            <div class="section-header">
+                <h2>用户留言</h2>
+                <p>听听大家的声音，也欢迎你分享观点</p>
+                <span class="divider"></span>
+            </div>
+            <div class="comment-wrapper">
+                <!-- 左：表单 -->
+                <div class="comment-form-side">
+                    <div class="comment-form-card">
+                        <input type="text" placeholder="你的昵称" maxlength="20" aria-label="昵称">
+                        <textarea placeholder="写下你对本站剧集、功能的看法与建议..." aria-label="留言内容"></textarea>
+                        <button class="btn-submit">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="#fff"><path d="M4 12l16-8-8 16-2-6-6-2z"/></svg>
+                            发布留言
+                        </button>
+                    </div>
+                </div>
+                <!-- 右：评论列表 -->
+                <div class="comment-list-side">
+                    <div class="comment-list-header">
+                        <h3>最新评论</h3>
+                        <span class="comment-count" id="commentCount">50条</span>
+                    </div>
+                    <div class="comment-scroll" id="commentScroll">
+                        <!-- JS动态生成 -->
+                    </div>
+                    <div class="comment-more">
+                        <span>向下滑动查看更多留言</span>
+                        <svg viewBox="0 0 24 24" fill="#8a9199"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== 页脚 ===== -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-links">
+                <a href="#">关于我们</a>
+                <a href="#">联系我们</a>
+                <a href="#">免责声明</a>
+                <a href="#">用户协议</a>
+                <a href="#">隐私政策</a>
+                <a href="#">帮助中心</a>
+            </div>
+            <div class="footer-copy">
+                © 2026 我爱搞g52百度 MagnetoSearch.com 版权所有 | 本站仅提供搜索技术服务，请遵守当地法律法规
+            </div>
+        </div>
+    </footer>
+    <!-- ===== 结构化数据 Schema ===== -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+                "@type": "Question",
+                "name": "我爱搞g52百度会收录违规资源吗？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "平台严格遵守法律法规，建立了敏感资源自动过滤机制。对违规内容零容忍，支持用户举报，运营团队持续优化内容安全策略。平台仅提供搜索技术，不直接存储资源文件。"
+                }
+            }, {
+                "@type": "Question",
+                "name": "磁力链接与BT种子有何区别？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "磁力链接基于DHT网络哈希标识，无需种子文件即可定位资源；BT种子文件包含文件元数据。磁力链接不依赖中央服务器更不易失效，分享也更方便。"
+                }
+            }, {
+                "@type": "Question",
+                "name": "为什么有些磁力链接下载速度很慢？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "资源热门程度、DHT网络节点连接、下载器参数配置、本地网络环境等都会影响下载速度。冷门资源下载用户少，速度自然慢。"
+                }
+            }, {
+                "@type": "Question",
+                "name": "使用磁力搜索下载影视资源合法吗？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "搜索引擎本身是中立的，但下载盗版资源可能侵权。用户应优先选择正版渠道，不得将下载资源用于商业用途或大肆传播。"
+                }
+            }, {
+                "@type": "Question",
+                "name": "我爱搞g52百度的资源更新频率如何？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "核心索引库每10分钟自动同步一次，热门资源几分钟内可被搜索到。失效资源24小时内标记下架，用户可提交新链接。"
+                }
+            }, {
+                "@type": "Question",
+                "name": "如何安全地使用磁力搜索工具？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "建议使用官方推荐客户端，安装杀毒软件，下载后先扫描再运行。避免关闭杀毒软件，不要下载来源不明的破解版，保护个人隐私。"
+                }
+            }]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "VideoObject",
+            "name": "我爱搞g52百度热门精选视频",
+            "description": "包含2026年科幻大片、经典武侠4K修复版、悬疑剧解说等精选视频推荐。",
+            "thumbnailUrl": [
+                "https://example.com/thumb1.jpg",
+                "https://example.com/thumb2.jpg"
+            ],
+            "uploadDate": "2026-02-18T08:00:00+08:00",
+            "publisher": {
+                "@type": "Organization",
+                "name": "我爱搞g52百度"
+            }
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "我爱搞g52百度相关资讯",
+            "description": "春季档电影市场、磁力链接技术、BT下载防坑指南、4K画质、版权保护、NAS搭建影视库等资讯文章。",
+            "author": {
+                "@type": "Organization",
+                "name": "我爱搞g52百度"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "我爱搞g52百度"
+            },
+            "datePublished": "2026-02-18",
+            "dateModified": "2026-02-18"
+        }
+    </script>
+    <!-- ===== 页面交互脚本 ===== -->
+    <script>
+        // ===== 粒子背景 =====
+        (function() {
+            const canvas = document.getElementById('particle-bg');
+            const ctx = canvas.getContext('2d');
+            let width, height;
+            let particles = [];
+            function resize() {
+                width = canvas.width = window.innerWidth;
+                height = canvas.height = window.innerHeight;
+            }
+            window.addEventListener('resize', resize);
+            resize();
+            const colors = ['rgba(230,57,70,', 'rgba(69,123,157,'];
+            function createParticles() {
+                const count = Math.floor(width * height / 15000);
+                particles = [];
+                for (let i = 0; i < count; i++) {
+                    particles.push({
+                        x: Math.random() * width,
+                        y: Math.random() * height,
+                        vx: (Math.random() - 0.5) * 0.4,
+                        vy: (Math.random() - 0.5) * 0.4,
+                        r: Math.random() * 3 + 1,
+                        color: colors[Math.floor(Math.random() * colors.length)],
+                        alpha: Math.random() * 0.5 + 0.2
+                    });
+                }
+            }
+            createParticles();
+            function draw() {
+                ctx.clearRect(0, 0, width, height);
+                particles.forEach(p => {
+                    p.x += p.vx;
+                    p.y += p.vy;
+                    if (p.x < 0) p.x = width;
+                    if (p.x > width) p.x = 0;
+                    if (p.y < 0) p.y = height;
+                    if (p.y > height) p.y = 0;
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+                    ctx.fillStyle = p.color + p.alpha + ')';
+                    ctx.fill();
+                });
+                requestAnimationFrame(draw);
+            }
+            draw();
+        })();
+        // ===== 评论动态数据 =====
+        (function() {
+            const comments = [
+                { n: '追剧小达人', tag: '热议', t: '最近在这站找到了好多稀有的老电影，画质还都是高清修复版，真的太惊喜了！', d: -2, l: 256, r: 12 },
+                { n: '影迷老王', tag: '理性', t: '搜索速度确实快，输入关键词基本秒出结果。UI比同类站点清爽多了，没有乱七八糟的广告。', d: -1, l: 132, r: 5 },
+                { n: '云上漫游', tag: '热门', t: '春假的《迷雾追踪》全季资源在这找到了，一口气追完六集，剧情太顶了！', d: -4, l: 512, r: 23 },
+                { n: '咸鱼不咸', tag: '观点', t: 'DHT机制下搜索磁力确实比传统BT更稳定，希望继续优化冷门资源的收录速度。', d: -5, l: 88, r: 3 },
+                { n: '小笼包啊', tag: '精彩', t: '首页推荐的科幻片单质量超高，基本都是口碑佳作，省了自己淘片的时间。', d: -3, l: 189, r: 8 },
+                { n: '深夜放映员', tag: '评论', t: '用了三个月了，总体体验很好。就是偶尔会搜到失效链接，期待系统更智能地过滤死链。', d: -6, l: 45, r: 2 },
+                { n: '清风徐来', tag: '讨论', t: '请问大家，为什么同一资源用不同下载器速度差距那么大？有推荐的吗？', d: -7, l: 78, r: 15 },
+                { n: '太平洋潜水艇', tag: '催更', t: '催更！新出的那部纪录片《深海四季》全网找遍了，就等你们收录了！', d: -8, l: 322, r: 19 },
+                { n: '快乐星球居民', tag: '好评', t: '给这个搜索站点赞，界面干净，搜索快，而且没有各种弹窗，体验舒服。', d: -9, l: 99, r: 4 },
+                { n: '软萌兔兔', tag: '热议', t: '作为妹子也来夸一下，页面设计好看，搜索影视资源什么的超方便！', d: -10, l: 210, r: 11 },
+                { n: '老北京铜锅', tag: '理性', t: '对比了好几个搜索站，这家的资源覆盖度确实是最高的，尤其是某些小众作品。', d: -11, l: 66, r: 2 },
+                { n: '疯狂的石头', tag: '观点', t: '希望增加按地区筛选的功能，有时候想找特定国家的影视作品，现在只能靠关键词。', d: -12, l: 143, r: 7 },
+                { n: '小宇宙爆发', tag: '热门', t: '在这里找到了梦寐以求的《大闹天宫》4K修复版，画质惊到我了，感谢分享！', d: -13, l: 431, r: 20 },
+                { n: '听风者', tag: '评论', t: '收藏了几个经典老片的磁力链，一年多还活着，比某些网盘强太多。', d: -14, l: 54, r: 3 },
+                { n: '芝士就是力量', tag: '讨论', t: '刚接触磁力搜索，请问怎么判断一个资源是不是高清重制版？求科普。', d: -15, l: 67, r: 9 },
+                { n: '半瓶醋', tag: '精彩', t: '看那个动漫《星际牛仔》的资源就是从这找的，蓝光画质，太爽了！', d: -16, l: 278, r: 14 },
+                { n: '蓝色多瑙河', tag: '催更', t: '拜托更新一下《权力的游戏》原始无删减版，找了好多站都没有高清的……', d: -17, l: 89, r: 6 },
+                { n: '不吃香菜', tag: '好评', t: 'iOS Safari下使用体验很流畅，完全适配手机端，程序员加鸡腿！', d: -18, l: 65, r: 2 },
+                { n: '大漠孤烟', tag: '理性', t: '法律角度提醒一下大家：下载资源要擦亮眼睛，优先支持正版，合理使用。', d: -19, l: 82, r: 16 },
+                { n: '雨中de阳光', tag: '热议', t: '惊喜发现居然有古典音乐无损资源，作为古典乐迷开心到转圈~', d: -20, l: 345, r: 18 },
+                { n: '业余编剧', tag: '观点', t: '很多独立电影人的作品也在上面找到了，对小众电影传播来说是好事。', d: -21, l: 59, r: 4 },
+                { n: '海的那边', tag: '评论', t: '在海外用也很好，速度稳定。就是偶尔有资源被版权方盯上，不过正常。', d: -22, l: 73, r: 5 },
+                { n: '橘子汽水', tag: '热门', t: '谁能想到《星际穿越》的IMAX版资源比某些网站的4K还清楚！强推！', d: -23, l: 267, r: 13 },
+                { n: '左岸右转', tag: '好评', t: '下载了字幕组精校版本，配合磁力搜索体验无敌，感谢分享。', d: -24, l: 41, r: 1 },
+                { n: '风中的葉', tag: '讨论', t: '问一下各位老哥，什么样的下载器对磁力最友好？在线等挺急的。', d: -25, l: 58, r: 21 },
+                { n: '夏日麽麽茶', tag: '热议', t: '搜到好多经典日剧，想起了小时候的暑假。这些资源别处很难找了！', d: -26, l: 178, r: 7 },
+                { n: '沉默的螺旋', tag: '理性', t: '信息聚合效率很高，但大家下载时也得注意文件大小与资源描述是否相符。', d: -27, l: 35, r: 3 },
+                { n: '大橘为重', tag: '评论', t: '家里用的是NAS自动下载，这站列出的资源名称清晰，脚本很好匹配。', d: -28, l: 62, r: 2 },
+                { n: '奔跑的蜗牛', tag: '催更', t: '期待上线一个"蓝光原盘专区"，集合所有高质量电影资源，方便查找。', d: -29, l: 96, r: 8 },
+                { n: '暖阳', tag: '好评', t: '发现这里不止影视，还有软件和学习资料。简直是宝库级的搜索站！', d: -30, l: 153, r: 9 },
+                { n: '小满', tag: '热议', t: '手下的字幕组慕名来用，说是搜索效率最高的站，果然名不虚传。', d: -2, l: 87, r: 4 },
+                { n: '梦想家', tag: '观点', t: '广告不多，说明有自己的盈利模式。希望坚持下去，不要变成满屏广告。', d: -3, l: 44, r: 2 },
+                { n: '桂花糕', tag: '讨论', t: '请问站内有没有手机端APP推荐？网页版已经很好了但想要个快捷入口。', d: -4, l: 52, r: 6 },
+                { n: '星河滚烫', tag: '精彩', t: '最爱用的搜索站没有之一，每次都能找到想找的资源，非常可靠！', d: -5, l: 128, r: 3 },
+                { n: '白开水', tag: '评论', t: '希望评论区能增加个"有用"按钮，像豆瓣一样，这样的话高质量回答能置顶。', d: -6, l: 39, r: 2 },
+                { n: '远山近水', tag: '理性', t: '个人建议：资源下载完成后可以上传一会儿，帮助其他朋友加速，利于共享。', d: -7, l: 71, r: 12 },
+                { n: '偷偷上头', tag: '热门', t: '首页那个《经典武侠合集》太杀了，一股脑下载了全套邵氏电影！', d: -8, l: 234, r: 10 },
+                { n: '路过人间', tag: '热议', t: '这站的搜索结果排序很智能，热门资源排前面，省了很多时间，赞！', d: -9, l: 47, r: 1 },
+                { n: '深海里的鱼', tag: '好评', t: '站内还有一个周更新榜，适合剧荒的朋友，挺贴心的设计。', d: -10, l: 21, r: 0 },
+                { n: '键盘侠克星', tag: '观点', t: '希望多一些港剧资源，TVB的经典剧集慢慢找不到了，希望加大收录。', d: -11, l: 33, r: 5 },
+                { n: '山茶花', tag: '评论', t: '作为视觉党，这个页面的设计真的好看，颜值在我用过的站里排前三！', d: -12, l: 83, r: 2 },
+                { n: '东北小爷', tag: '讨论', t: '咨询一下，4K资源和蓝光原盘差别大吗？文件大小差太多了，之前一直搞不懂。', d: -13, l: 29, r: 8 },
+                { n: '南方的风', tag: '催更', t: '怎么还没有《奥本海默》的资源？全网找遍了，就等这站收录了！', d: -14, l: 102, r: 6 },
+                { n: '漂浮的云', tag: '热议', t: '有一说一，新手第一次用这个站就知道怎么操作，门槛低，体验好。', d: -15, l: 61, r: 0 },
+                { n: '暗夜骑士', tag: '好评', t: '测试了十几种资源，大部分都能秒速解析出高清源，技术实力靠谱。', d: -16, l: 154, r: 7 },
+                { n: '小番茄', tag: '理性', t: '有些资源确实会失效，但我发现隔几天再搜可能又恢复了，DHT网络就是这样。', d: -17, l: 43, r: 1 },
+                { n: '银河系漫游者', tag: '热门', t: '发现了一部冷门但超好看的德国电影，这种宝藏站真的希望越办越好！', d: -18, l: 189, r: 9 },
+                { n: '波波头', tag: '讨论', t: '请问有没有办法在下载前看到文件列表？有时候不想下整个合集。', d: -19, l: 25, r: 4 },
+                { n: '北方的狼', tag: '观点', t: '希望加强反诈提示，现在有些钓鱼资源伪装得挺像，注意鉴别。', d: -20, l: 37, r: 3 },
+                { n: '柠檬不酸', tag: '好评', t: '在这个站搜到的最惊喜的资源是《蓝调之歌》修复版，哭着看完，感谢。', d: -21, l: 64, r: 2 }
+            ];
+            // 生成时间戳（近30天内）
+            const now = new Date();
+            const list = comments.map((item, index) => {
+                const d = new Date(now);
+                d.setDate(d.getDate() + item.d);
+                d.setHours(Math.floor(Math.random() * 24), Math.floor(Math.random() * 60), 0, 0);
+                return {
+                    ...item,
+                    time: d,
+                    timeStr: d.getFullYear() + '-' +
+                        String(d.getMonth() + 1).padStart(2, '0') + '-' +
+                        String(d.getDate()).padStart(2, '0') + ' ' +
+                        String(d.getHours()).padStart(2, '0') + ':' +
+                        String(d.getMinutes()).padStart(2, '0')
+                };
+            }).sort((a, b) => b.time - a.time);
+            const container = document.getElementById('commentScroll');
+            const tagPool = ['热议', '理性', '热门', '观点', '精彩', '讨论', '催更', '好评'];
+            const tagIcon = '<svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95a15.65 15.65 0 0 0-1.38-3.56A8.03 8.03 0 0 1 18.92 8zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56A7.987 7.987 0 0 1 5.08 16zm2.95-8H5.08a7.987 7.987 0 0 1 4.33-3.56A15.65 15.65 0 0 0 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.34.16-2h4.68c.09.66.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/></svg>';
+            let html = '';
+            list.forEach((item, i) => {
+                const avatarChar = item.n.charAt(0);
+                const tagClass = tagPool.includes(item.tag) ? item.tag : '热议';
+                html += `
+                    <div class="comment-item">
+                        <div class="comment-header">
+                            <div class="comment-avatar">${avatarChar}</div>
+                            <span class="comment-nick">${item.n}</span>
+                            <span class="comment-time">${item.timeStr}</span>
+                        </div>
+                        <div class="comment-tag-row">
+                            <span class="comment-tag">${tagIcon} ${item.tag}</span>
+                        </div>
+                        <p class="comment-text">${item.t}</p>
+                        <div class="comment-actions">
+                            <button class="action-btn">
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="#8a9199"><path d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"/></svg>
+                                ${item.l}
+                            </button>
+                            <button class="action-btn">
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="#8a9199"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+                                ${item.r}
+                            </button>
+                        </div>
+                    </div>`;
+            });
+            container.innerHTML = html;
+            document.getElementById('commentCount').textContent = list.length + '条';
+        })();
+        // ===== FAQ 手风琴 =====
+        (function() {
+            const items = document.querySelectorAll('.faq-item');
+            items.forEach(item => {
+                const q = item.querySelector('.faq-question');
+                q.addEventListener('click', function() {
+                    const isActive = item.classList.contains('active');
+                    // 全部折叠
+                    items.forEach(i => i.classList.remove('active'));
+                    // 如果之前没展开，则展开当前
+                    if (!isActive) {
+                        item.classList.add('active');
+                    }
+                });
+            });
+        })();
+    </script>
+</body>
+</html>
